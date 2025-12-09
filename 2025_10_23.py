@@ -26,24 +26,18 @@ def favorite_songs(playlist):
 
     top_songs.append(top1_name)
     top_songs.append(top2_name)
-    print(top_songs)
 
     return top_songs
 
 
-p = [
-    {
-        "title": "Sync or Swim",
-        "plays": 3
-    },
-    {
-        "title": "Byte Me",
-        "plays": 1
-    },
-    {
-        "title": "Earbud Blues",
-        "plays": 2
-    }
-]
 
-favorite_songs(p)
+
+
+# TEST 1 - return ['Sync or Swim', 'Earbud Blues']
+print(favorite_songs([{"title": "Sync or Swim", "plays": 3}, {"title": "Byte Me", "plays": 1}, {"title": "Earbud Blues", "plays": 2} ]))
+
+# TEST 2 - return ['Clickwheel Love', '99 Downloads']
+print(favorite_songs([{"title": "Skip Track", "plays": 98}, {"title": "99 Downloads", "plays": 99}, {"title": "Clickwheel Love", "plays": 100} ]))
+
+# TEST 3 - return ['Song B', 'Song C']
+print(favorite_songs([{"title": "Song A", "plays": 42}, {"title": "Song B", "plays": 99}, {"title": "Song C", "plays": 75} ]))
