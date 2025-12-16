@@ -1,12 +1,12 @@
 function detectAI(text) {
     let dashCount = countDashes(text)
-    let parethesesCount = countParentheses(text)
+    let parenthesesCount = countParentheses(text)
     let bigWordsCount = countBigWords(text)
 
     if (dashCount >= 2) {
         return "AI"
     }
-    if (parethesesCount >= 2) {
+    if (parenthesesCount >= 2) {
         return "AI"
     }
     if (bigWordsCount >= 3) {
