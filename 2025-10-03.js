@@ -19,9 +19,7 @@ function checkStrength(password) {
 }
 
 function checkLength(p) {
-    if (p.length >= 8) {
-        return true
-    } return false
+    return p.length >= 8;
 }
 
 function checkUpperLower(p) {
@@ -37,5 +35,5 @@ function checkNumber(p) {
 }
 
 function checkSpecialCharacter(p) {
-    return /[!,@,#,$,%,^,&,*]/.test(p)
+    return /[!@#$%^&*]/.test(p)
 }
